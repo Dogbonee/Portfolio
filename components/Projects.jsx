@@ -3,6 +3,7 @@
 import {motion} from "framer-motion";
 import {Card, CardContent, CardHeader} from "./ui/card";
 import Link from "next/link";
+import Image from "next/image";
 import GithubIcon from "./Icons/GithubIcon"
 
 const containerVariants = {
@@ -37,18 +38,37 @@ export default function Projects() {
             >
 
                 <motion.div variants={cardVariants}>
-                    <Card className="max-w-full bg-transparent my-8 lg:m-10">
-                        <CardHeader className="text-2xl">
-                            FeederAce
-                        </CardHeader>
-                        <CardContent>
-                            FeederAce is a multi-device ecosystem comprising of both the FeederAce unit and the
-                            FeederAce controller. The unit is used for controlling agricultural equipment through Bluetooth Low-Energy mode,
-                            and is secure boot and flash encryption enabled, with signed OTA updates installable to the device
-                            through the controller. The controller is a cross-platform Flutter application that connects to the
-                            device and sends commands and updates to the unit.
-                        </CardContent>
-                    </Card>
+                    <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 my-8 lg:mx-10">
+                        <Card className="flex-1 w-full bg-transparent">
+                            <CardHeader className="text-2xl">
+                                FeederAce
+                            </CardHeader>
+                            <CardContent>
+                                FeederAce is a multi-device ecosystem comprising of both the FeederAce unit and the
+                                FeederAce controller. The unit is used for controlling agricultural equipment through Bluetooth Low-Energy mode,
+                                and is secure boot and flash encryption enabled, with signed OTA updates installable to the device
+                                through the controller. The controller is a cross-platform Flutter application that connects to the
+                                device and sends commands and updates to the unit.
+                            </CardContent>
+                        </Card>
+
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-5 w-full lg:w-2/5 shrink-0">
+                            <Image
+                                src="/images/feederace_closed.jpg"
+                                width={256}
+                                height={256}
+                                alt="FeederAce unit"
+                                className="rounded-lg shadow-lg object-cover w-full max-w-[256px]"
+                            />
+                            <Image
+                                src="/images/feederace_open.jpg"
+                                width={256}
+                                height={256}
+                                alt="FeederAce unit with lid off"
+                                className="rounded-lg shadow-lg object-cover w-full max-w-[256px]"
+                            />
+                        </div>
+                    </div>
                 </motion.div>
 
                 <motion.div variants={cardVariants}>
