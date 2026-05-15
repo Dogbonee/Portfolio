@@ -2,9 +2,9 @@ import {Card, CardDescription, CardFooter, CardHeader, CardTitle,} from "@/compo
 import Image from "next/image";
 import Link from "next/link";
 
-export default function AppProjectCard({ icon, title, description, delayMS, iosLink, androidLink }) {
+export default function AppProjectCard({ icon, title, description, delayClass, iosLink, androidLink }) {
     return (
-        <Card className={`w-full max-w-md animate-in fade-in duration-1000 ease-in-out fill-mode-[both] duration-1000 delay-${delayMS}`}>
+        <Card className={`w-full max-w-md animate-in fade-in ease-in-out fill-mode-[both] duration-1000 ${delayClass}`}>
             <CardHeader>
                 <div className="flex flex-row items-center gap-4 mb-2">
                     <Image

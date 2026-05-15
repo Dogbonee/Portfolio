@@ -5,7 +5,7 @@ import Socials from "@/components/Socials";
 export default function Navbar() {
     return (
         <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-background/80 backdrop-blur-md">
-            <div className="container mx-auto flex h-16 items-center justify-between px-4">
+            <div className="mx-auto flex h-16 items-center justify-between px-4">
                 <ScrollLink
                     to="home"
                     smooth={true}

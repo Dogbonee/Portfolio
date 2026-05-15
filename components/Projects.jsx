@@ -27,7 +27,7 @@ const cardVariants = {
 
 export default function Projects() {
     return (
-        <div className="container mx-auto mb-20 py-16 px-4 md:px-8 bg-muted/40">
+        <div className="mx-auto mb-20 py-16 px-4 md:px-8 bg-muted/40">
             <h1 className="text-4xl md:text-5xl font-bold p-4 md:p-10">Projects</h1>
 
             <motion.div
